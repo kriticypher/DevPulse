@@ -2,7 +2,7 @@
 
 > **Smart Node.js project health auditor — catch problems before your users do.**
 
-[![npm version](https://img.shields.io/npm/v/devpulse-cli.svg)](https://www.npmjs.com/package/devpulse-cli)
+[![npm version](https://img.shields.io/npm/v/kriti-devpulse.svg)](https://www.npmjs.com/package/kriti-devpulse)
 [![Node.js >=16](https://img.shields.io/badge/node-%3E%3D16-brightgreen)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -23,10 +23,10 @@ DevPulse scans your Node.js project and produces a **health score (0–100)** ba
 
 ```bash
 # Global install (recommended)
-npm install -g devpulse-cli
+npm install -g kriti-devpulse
 
 # Or use directly with npx
-npx devpulse-cli audit
+npx kriti-devpulse audit
 ```
 
 ---
@@ -117,7 +117,7 @@ devpulse info
 
 ```json
 {
-  "tool": "devpulse-cli",
+  "tool": "kriti-devpulse",
   "version": "1.0.0",
   "timestamp": "2026-11-22T13:41:00.000Z",
   "target": "/path/to/project",

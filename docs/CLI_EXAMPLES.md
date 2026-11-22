@@ -37,7 +37,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
-      - run: npm install -g devpulse-cli
+      - run: npm install -g kriti-devpulse
       - run: devpulse audit --threshold 70
 ```
 
@@ -108,7 +108,7 @@ done
 ## Programmatic API
 
 ```js
-const { runAudit } = require('devpulse-cli');
+const { runAudit } = require('kriti-devpulse');
 
 const report = await runAudit('/path/to/project', {
   output: 'json',
