@@ -18,7 +18,7 @@ describe('checkMissingFiles()', () => {
   it('reports all files missing for empty dir', async () => {
     const result = await checkMissingFiles(tmpDir);
     expect(result.missing.length).toBeGreaterThan(0);
-    expect(result.criticalCount).toBe(0); // package.json is warning not critical here
+    expect(result.criticalCount).toBe(1); // package.json is critical
   });
 
   it('detects README.md as present when it exists', async () => {
