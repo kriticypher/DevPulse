@@ -1,0 +1,56 @@
+{
+  "name": "devpulse-cli",
+  "version": "1.0.0",
+  "description": "DevPulse — A smart CLI tool for auditing Node.js project health",
+  "main": "src/index.js",
+  "bin": {
+    "devpulse": "./bin/devpulse.js"
+  },
+  "scripts": {
+    "start": "node bin/devpulse.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --write src/ tests/",
+    "prepare": "node -e \"require('./src/index.js')\"",
+    "release": "npm version patch && npm pack"
+  },
+  "keywords": [
+    "cli",
+    "devtools",
+    "npm",
+    "audit",
+    "health",
+    "dependencies",
+    "analyzer",
+    "nodejs"
+  ],
+  "author": "Kriti Maurya",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1",
+    "boxen": "^5.1.2",
+    "semver": "^7.5.4",
+    "glob": "^8.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ]
+  }
+}
