@@ -13,10 +13,8 @@ const ALWAYS_USED = new Set([
   'babel-jest', '@babel', 'nodemon', 'concurrently',
 ]);
 
-const IMPORT_RE  = /(?:require\s*\(\s*['"`]|from\s+['"`]|import\s+['"`])([^'"` 
-/]+)/g;
-const DYNAMIC_RE = /import\s*\(\s*['"`]([^'"` 
-/]+)['"`]\s*\)/g;
+const IMPORT_RE  = /(?:require\s*\(\s*['"`]|from\s+['"`]|import\s+['"`])([^'"`\s/]+)/g;
+const DYNAMIC_RE = /import\s*\(\s*['"`]([^'"`\s/]+)['"`]\s*\)/g;
 
 function collectImports(content) {
   const names = new Set();
