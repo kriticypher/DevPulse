@@ -11,7 +11,7 @@ const path = require('path');
  */
 async function exportJsonReport(report, outPath) {
   const output = {
-    tool:      'devpulse-cli',
+    tool:      'kriti-devpulse',
     version:   require('../../package.json').version,
     timestamp: report.timestamp,
     target:    report.targetDir,

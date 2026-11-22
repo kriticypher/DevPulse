@@ -1,10 +1,11 @@
 {
-  "name": "devpulse-cli",
+  "name": "kriti-devpulse",
   "version": "1.0.0",
   "description": "DevPulse — A smart CLI tool for auditing Node.js project health",
   "main": "src/index.js",
   "bin": {
-    "devpulse": "./bin/devpulse.js"
+    "devpulse": "./bin/devpulse.js",
+    "kriti-devpulse": "./bin/devpulse.js"
   },
   "scripts": {
     "start": "node bin/devpulse.js",
