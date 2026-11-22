@@ -1,0 +1,16 @@
+# Development files
+tests/
+docs/
+coverage/
+*.log
+.env*
+.DS_Store
+
+# Git
+.git/
+.gitignore
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
