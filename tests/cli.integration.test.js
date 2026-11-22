@@ -64,7 +64,7 @@ describe('DevPulse CLI Integration', () => {
     expect(result.status).toBe(0);
     expect(fs.existsSync(outFile)).toBe(true);
     const data = JSON.parse(fs.readFileSync(outFile, 'utf8'));
-    expect(data.tool).toBe('devpulse-cli');
+    expect(data.tool).toBe('kriti-devpulse');
     expect(data.score).toBeDefined();
   });
 
